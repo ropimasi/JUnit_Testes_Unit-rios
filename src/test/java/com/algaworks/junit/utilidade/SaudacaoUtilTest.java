@@ -1,6 +1,7 @@
 package com.algaworks.junit.utilidade;
 
-import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 
@@ -11,8 +12,9 @@ class SaudacaoUtilTest {
 	@Test
 	void test() {
 		String saudacao = SaudacaoUtil.saudar(10);
-		Assertions.assertTrue(saudacao.equals("Bom dia"));
-		Assertions.assertEquals(saudacao, "Bom dia");
+		// assertTrue(saudacao.equals("Bom dia"));
+		assertEquals("Bom dia", saudacao, "Saudação incorreta para o período da manhã.");
+
 	}
 
 }
