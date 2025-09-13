@@ -1,0 +1,14 @@
+mvn validate // valida o pom.xml
+
+mvn dependency:resolve // dependencias são baixadas para o repositório local do maven: .m2/
+
+mvn compile // compila o projeto: arquivos  .java em arquivos .class
+
+mvn verify // verifica se o projeto está correto e completo
+
+mvn package // empacota o projeto em um arquivo .jar ou .war
+
+mvn install // instala o arquivo empacotado no repositório local do maven: .m2/
+
+mvn clean // limpa os arquivos gerados na compilação e empacotamento
+
